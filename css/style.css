@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+}
+nav a{
+     color: #8b8b8b;
+     margin-right: 12px;
+}
+nav a:hover,
+nav a :focus{
+    color: #f5f0b8;
+}
+form div{
+    margin-bottom: 14px;
+}
+label{
+    font-weight: bold;
+}
+form div > label{
+    display: inline-block;
+    width: 100px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea{
+    background-color: #f5f0b8;
+    color: #111;
+    border: 1px solid #f5f0b8;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 260px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+textarea{
+    width:100%;
+    resize: vertical;
+}
+fieldset{
+    border: 2px solid #f5f0b8;
+    border-radius: 4px;
+    margin: 0 0 16px;
+    padding: 10px 16px;
+}
+legend{
+    font-weight: bold;
+    padding: 0 6px;
+}
+fieldset label{
+    margin-right: 14px; 
+}
+input :focus,
+select :focus,
+textarea :focus{ 
+    outline: 3px solid #8ab4f8;
+}
+button{
+    background-color: #f5f0b8;
+    color: #111;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover,
+button:focus{
+    background-color: #fff;
+}
+@media (max-width:500px){
+    form div > label{
+        display: block;
+        width: auto;
+    }
+}

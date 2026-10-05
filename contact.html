@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+         <h1> Contact Us </h1>
+         <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+         </nav>
+    </header>     
+         <p>Please fill out the form below and  we will contact you.</p>
+        <form action="/submit" method="post">
+                   <!-- Name -->
+            <div>        
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>    
+                   <!-- Email -->
+            <div>        
+                <label for="email">Email: </label>
+                 <input type="email" name="email" id="email"required>
+            </div>     
+                   <!-- Number --> 
+            <div>      
+                <label for="number">Number: </label>
+                 <input type="number" name="number" id="number"required>
+            </div>     
+                   <!-- Date -->
+            <div>        
+                <label for="date">Date: </label>
+                <input type="date" name="date" id="date">
+            </div>    
+                <!-- Radio Buttons -->
+            <fieldset>   
+                <legend>Gender</legend>  
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="female" name="gender" id="female" value="female">
+            </fieldset>
+                   <!-- Checkboxes -->    
+            <fieldset>   
+               <legend>Preferred Contact Method</legend>    
+
+               <label for="phoneCall">Phone Call</label>
+               <input type="checkbox"  id="phoneCall" name="contactMethod" value="phoneCall">
+
+               <label for="whatsapp">WhatsApp</label>
+               <input type="checkbox" name="contactMethod" id="whatsapp" value="whatsapp">
+
+               <label for="email">Email</label>
+               <input type="checkbox" name="contactMethod" id="email" value="email">
+            </fieldset> 
+                     <!-- Dropdown Menu -->
+            <div>
+                <label for="country"> Country</label>
+                <select name="country" id="country">
+                    <option value="eg">Egypt</option>
+                    <option value="sa">Saudi Arabia</option>
+                    <option value="us"> United States Of America</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>    
+                     <!-- Large Text Box --> 
+            <div>
+                <label for="msg"> Message</label>
+                <textarea name="msg" id="msg" rows="5"></textarea>
+            </div>          
+            <button type="submit">Send Message</button>
+      </form> 
+</body>
+</html>
